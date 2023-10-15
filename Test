@@ -1,0 +1,9 @@
+quote = 12398107313
+new_quote = []
+print(quote%2)
+while quote > 0:    
+    print(quote)
+    quote = quote//2
+    new_quote.append(quote%2)
+    print(quote%2)
+print(new_quote)
