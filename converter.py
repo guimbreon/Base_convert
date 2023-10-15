@@ -7,8 +7,7 @@ def getData(file_link):
     return values
 
 def getValues():
-    quote = "6712AF16.12414AFCD|16"
-#    quote = input("")
+    quote = input("What values do you want to work with?\n(value|base)\n>>>")
     quote = quote.split("|")
     return quote[0],int(quote[1])
 
@@ -72,7 +71,7 @@ def fromXTo10(quote,base):
     return new_quote
 
 
-values = getData("/home/guimbreon/Desktop/git/Tests/Base_transformer/Keys")
+values = getData("CHANGE ME")
 quote,base = getValues()
 quoteConvert = fromXTo10(quote,base)
 baseConvert = 10
